@@ -3,7 +3,7 @@
 #menu li {display:inline;font-size:110%;margin:auto .5em}
 #menu a {text-decoration:none}
 #menu a.current, #menu a.current:visited {text-decoration:underline;text-shadow:#b90300 0 0 10px}
-#gradient {background:url(gradient.png) repeat-y;clear:both;color:white;margin-bottom:2em}
+#gradient {background:url(gradient.png) repeat-y;border-radius:10px;clear:both;color:white;margin-bottom:2em}
 #inner-gradient {margin:1em 2em;font-size:120%}
 #gradient h1 {color:white;font-size:180%}
 #main {font-size:110%}
@@ -14,9 +14,9 @@
 a, a:visited {color:#b90300}
 a:hover, a:visited:hover {color:#b90300;text-decoration:underline !important;text-shadow:#b90300 0 0 10px}
 
-body .download {background-color:#f9c7ca;color:#b90300;margin-left:20px}
+body .download {background-color:#f9c7ca;border-radius:10px;box-shadow:inset 0 1px 3px #fff, inset 0 -20px #f9b7ba;color:#b90300;margin-left:20px;text-shadow:0 1px #fff}
 body .download span {color:#8d2ac2;display:block;font-size:75%}
-a.download:hover {background-color:#fbe3e4;color:#d12f19;text-decoration:none !important}
+a.download:hover {background-color:#fbe3e4;box-shadow:inset 0 1px 3px #fff, inset 0 -20px #fbdbdc;color:#d12f19;text-decoration:none !important}
 a.download:active {background-color:#f9c7ca}
 a.download img {float:left;margin:8px 8px 8px 0 !important}
 
