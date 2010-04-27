@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Framework PHP Web:Extend</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="/pub/blueprint-css/blueprint/screen.css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="/pub/blueprint-css/blueprint/plugins/buttons/screen.css"/>
+	<link rel="stylesheet" type="text/css" media="all" href="/pub/all.css"/>
+	<script type="text/javascript" src="/pub/jquery.js"></script>
+	<script type="text/javascript" src="/pub/jquery.corner.js"></script>
+	<script type="text/javascript">
+$(function(){
+	$('#gradient').corner();
+	$('a.download').corner();
+});
+	</script>
+</head>
+<body>
+<div class="container">
+
+<div id="header" class="span-24 last">
+	<a href="/"><img id="logo" src="/pub/logo-framework-p.jpg" alt="Framework PHP Web:Extend"/></a>
+	<ul id="menu">
+		<li><a class="current" href="/">Accueil</a></li>
+		<li><a href="/documentation">Documentation</a></li>
+		<li><a href="http://github.com/essen/wee">Source</a></li>
+		<li><a href="http://github.com/essen/wee/downloads">Téléchargements</a></li>
+		<li><a href="http://github.com/essen/wee/issues">Suivi des bugs</a></li>
+		<li><a href="http://blog.extend.ws">Blog</a></li>
+		<li><a href="http://groups.google.com/group/wee-users">Listes de diffusion</a></li>
+	</ul>
+</div>
+
+<div id="gradient" class="span-24 last"><div id="inner-gradient" class="span-24 last">
+	<h1>Un framework web PHP simple, moderne et puissant</h1>
+	<p><strong>Web:Extend</strong> offre :</p>
+	<div class="span-8"><ul>
+		<li>Architecture MVC</li>
+		<li>Gestion automatisée des formulaires</li>
+		<li>Intégration d'AJAX via Taconite</li>
+	</ul></div>
+	<div class="span-8"><ul>
+		<li>De nombreux drivers de BDD</li>
+		<li>Scaffolding de la base de données</li>
+		<li>Un modèle de données puissant</li>
+	</ul></div>
+	<div class="span-8 last"><ul>
+		<li>Authentification</li>
+		<li>Listes de contrôle d'accès</li>
+		<li>Et bien plus encore...</li>
+	</ul></div>
+</div></div>
+
+<div id="main" class="span-24 last">
+	<div class="prepend-1 span-6">
+		<h2>Télécharger</h2>
+		<a class="button download" href="http://github.com/essen/wee/tarball/wee-0.5.0">
+			<img src="/pub/go-down.png" alt=""/>
+			Télécharger Web:Extend<br/>
+			<span>v0.5.0, sorti mars 2009</span>
+		</a>
+		<span id="license">Code sous license <a href="http://github.com/essen/wee/blob/master/LICENSE">LGPL</a>.</span>
+	</div>
+	<div class="prepend-1 span-7">
+		<h2>Apprendre</h2>
+		<ol>
+			<li>Lire le <a href="/guide/HEAD/">guide</a></li>
+			<li>Découvrir l'<a href="/api/HEAD/">API</a></li>
+			<li><a href="http://groups.google.com/group/wee-users">Poser des questions</a> directement</li>
+		</ol>
+	</div>
+	<div class="prepend-1 span-7 append-1 last">
+		<h2>Contribuer</h2>
+		<ol>
+			<li>Faire tourner la <a href="/guide/HEAD/ap-contrib.html#ap-contrib-tests">suite de tests</a></li>
+			<li><a href="http://github.com/essen/wee/issues">Signaler des bugs</a></li>
+			<li>Améliorer <a href="/guide/HEAD/ap-contrib.html">le framework</a></li>
+		</ol>
+	</div>
+</div>
+
+<div id="footer" class="span-24 last">
+	<hr/>
+
+	Copyright &copy; 2006-2010 <a href="http://dev-extend.eu">Dev:Extend</a>. Tous droits réservés.
+</div>
+
+</div>
+</body>
+</html>
