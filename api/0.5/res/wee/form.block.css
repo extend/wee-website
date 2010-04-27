@@ -1,0 +1,59 @@
+/*
+	Web:Extend
+	Copyright (c) 2006-2009 Dev:Extend
+
+	This library is free software; you can redistribute it and/or
+	modify it under the terms of the GNU Lesser General Public
+	License as published by the Free Software Foundation; either
+	version 2.1 of the License, or (at your option) any later version.
+
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public
+	License along with this library; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+/* Forms default style */
+
+form.block ol						{margin:0;padding:0}
+form.block li						{list-style:none;margin:0;padding:.5em 0}
+form.block legend					{font-weight:bold;padding-right:0.2em}
+form.block label					{display:inline-block;padding-left:1em;vertical-align:top;width:14em}
+form.block ol ol ol label			{width:auto}
+form.block label+*					{margin-left:1em}
+form.block>ol>li					{margin:.5em 0}
+form.block>ol>li+li					{margin-top:0}
+form.block fieldset					{background:#f8f8f8;border:0;border-top:1px solid #bbb;margin:0 1em;width:40em}
+form.block fieldset fieldset		{border:0;margin:0;padding:0}
+form.block fieldset fieldset legend	{font-weight:normal;padding:0 0 0 1em}
+form.block fieldset fieldset li		{display:block;padding:.2em 0}
+form.block>ol>li>fieldset>ol>li		{border-bottom:1px solid #bbb}
+form.block fieldset fieldset label	{padding:0}
+form.block ol.errors,
+form.block label.checkbox			{margin-left:16.3em;padding:0;width:auto}
+form.block ol.errors li				{color:red;list-style:decimal}
+
+form.block input[type="text"],
+form.block input[type="password"]	{min-width:20em}
+
+form.block fieldset.buttonsfieldset {border-bottom:1px solid #bbb}
+form.block fieldset.buttonsfieldset ol	{margin:.5em 0;text-align:right}
+form.block fieldset.buttonsfieldset li	{border:0;display:inline;margin-right:1em}
+
+form.block fieldset.checklist ol,
+form.block fieldset.scrollablechecklist ol,
+form.block fieldset.radiobox ol				{margin-left:16.3em}
+form.block fieldset.radiobox li.group li label	{margin-left:1em}
+form.block fieldset.radiobox li.group ol	{margin:0}
+
+form.block fieldset.scrollablechecklist	ol			{border:1px solid gray;display:inline-block;max-height:16em;overflow:auto;width:20em}
+form.block fieldset.scrollablechecklist li			{background:#f3f3f3;height:1.6em;padding:0}
+form.block fieldset.scrollablechecklist li.odd		{background:#fff}
+form.block fieldset.scrollablechecklist li:hover	{background:#999;color:#fff}
+form.block fieldset.scrollablechecklist label		{display:block;margin:0}
+
+form.block li.invisible	{display:none}

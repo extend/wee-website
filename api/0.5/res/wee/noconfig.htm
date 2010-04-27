@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Fatal error</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/>
+	<style type="text/css">
+body {background:#fff url(<?php echo APP_PATH?>res/wee/bg.png) repeat-x}
+#container {margin:2em auto;text-align:justify;width:40em}
+h1,h2,ul {text-align:center}
+ul {padding:0}
+ul li {display:inline;margin:0 2em}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Web:Extend</h1>
+		</div>
+
+		<div id="contents">
+			<h2>No configuration file</h2>
+			<p>
+				The configuration file was not found. Please ensure that the file <code><?php echo WEE_CONF_FILE?></code> and all the included files exist.
+			</p>
+
+			<h2>Exception Message</h2>
+			<p><?php echo $e->getMessage()?></p>
+
+			<h2>Creating a configuration file</h2>
+			<p>
+				You can create a configuration file by copying the sample file available at <code>share/conf/sample.cnf</code>.
+				Copy it to <code>app/conf/wee.cnf</code> and <a href="http://wee.extend.ws/wiki/Documentation/Modules/Application/Configuration" title="Application Module: Configuration">modify it to suit your needs</a>.
+			</p>
+			<p>
+				You can choose to use a different filename for your configuration file.
+				In this case, please do not forget to define the constant <code>WEE_CONF_FILE</code> in your <code>index.php</code> file.
+				This constant defines the path to your configuration file.
+			</p>
+
+			<h2>Introductory tutorial</h2>
+			<p>
+				A tutorial describing <a href="http://wee.extend.ws/wiki/Documentation/Tutorials/Pastebin" title="Tutorials: Pastebin Application">how to write your very first application</a> is available for reading.
+				More tutorials can be found within the documentation.
+			</p>
+		</div>
+
+		<ul id="footer">
+			<li><a href="http://wee.extend.ws/" title="Home">home</a></li>
+			<li><a href="http://api.extend.ws/" title="API">api</a></li>
+			<li><a href="http://wee.extend.ws/wiki/Documentation" title="Documentation">documentation</a></li>
+			<li><a href="http://groups.google.com/group/wee-users" title="Mailing List">mailing list</a></li>
+			<li><a href="http://blog.extend.ws/" title="Blog">blog</a></li>
+		</ul>
+	</div>
+</body>
+</html>

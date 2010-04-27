@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Fatal error</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/>
+	<style type="text/css">
+body {background:#fff url(<?php echo APP_PATH?>res/wee/bg.png) repeat-x}
+#container {margin:2em auto;text-align:justify;width:40em}
+h1,h2,ul {text-align:center}
+ul {padding:0}
+ul li {display:inline;margin:0 2em}
+
+#php {background:#ffd;border:1px solid #880;padding:1em;text-align:justify}
+#php h3{width:8em;font-size:1em}
+#php h3,#php span{float:left;margin:0 0 1em 0}
+#php br{clear:left}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>An error occurred</h1>
+		</div>
+
+		<div id="contents">
+			<?php if (defined('DEBUG')):?> 
+				<div id="php" class="<?php echo $aDebug['type']?>">
+					<h3>Name:</h3><span><?php echo $aDebug['name']?></span><br/>
+					<h3>Message:</h3><span><?php echo $aDebug['message']?></span><br/>
+					<h3>File:</h3><span><?php echo $aDebug['file']?></span><br/>
+					<h3>Line:</h3><span><?php echo $aDebug['line']?></span><br/>
+					<h3>Trace:</h3><br/><pre><?php echo str_replace(': ', ':<br/>&nbsp;&nbsp;&nbsp;&nbsp;', nl2br($aDebug['trace']))?></pre>
+				</div>
+
+				<p>
+					Following is the default message shown when DEBUG mode is deactivated.<br/>
+					<a href="http://wee.extend.ws/wiki/CoreExceptions">Learn how to customize this page</a>.
+				</p>
+			<?php endif?> 
+
+			<h2>What can I do?</h2>
+			<p>The page you tried to access is currently unavailable. This can happen because:</p>
+			<ol>
+				<li>The Web address you typed is invalid or incomplete. Please check that it is correct.</li>
+				<li>The server is too busy. Please wait a moment and try to reload the page later.</li>
+				<li>The requested page have been removed and doesn't exist anymore. Please try to <a href="/">browse</a> for it.</li>
+			</ol>
+			<p>You can also try to <a href="javascript:history.back()">go back</a> to the previous page.</p>
+			<p>Please accept our apologies for the inconvenience.</p>
+		</div>
+
+		<?php if (defined('DEBUG')):?> 
+			<ul id="footer">
+				<li><a href="http://wee.extend.ws/" title="Home">home</a></li>
+				<li><a href="http://api.extend.ws/" title="API">api</a></li>
+				<li><a href="http://wee.extend.ws/wiki/Documentation" title="Documentation">documentation</a></li>
+				<li><a href="http://groups.google.com/group/wee-users" title="Mailing List">mailing list</a></li>
+				<li><a href="http://blog.extend.ws/" title="Blog">blog</a></li>
+			</ul>
+		<?php endif?> 
+	</div>
+</body>
+</html>

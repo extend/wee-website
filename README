@@ -1,0 +1,10 @@
+Web:Extend, its logo and its website are copyright (c) 2006-2010 Dev:Extend.
+
+Installation:
+
+ * enable Apache's mod_negotiation
+ * add "index" without the quotes to the DirectoryIndex directive
+ * enable Options MultiViews for the website's folder
+ * configure the 404 error page for the website: ErrorDocument 404 /404
+
+That should be it!

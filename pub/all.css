@@ -1,0 +1,23 @@
+#logo {float:left;height:147px;width:250px}
+#menu {display:inline;float:right;margin-top:120px}
+#menu li {display:inline;font-size:110%;margin:auto .5em}
+#menu a {text-decoration:none}
+#menu a.current, #menu a.current:visited {text-decoration:underline;text-shadow:#b90300 0 0 10px}
+#gradient {background:url(gradient.png) repeat-y;clear:both;color:white;margin-bottom:2em}
+#inner-gradient {margin:1em 2em;font-size:120%}
+#gradient h1 {color:white;font-size:180%}
+#main {font-size:110%}
+#main h2 {color:#69208f;font-size:150%;text-align:center}
+#license {padding-left:25px}
+#footer {clear:both;padding:3em 0 1em 0;text-align:center}
+
+a, a:visited {color:#b90300}
+a:hover, a:visited:hover {color:#b90300;text-decoration:underline !important;text-shadow:#b90300 0 0 10px}
+
+body .download {background-color:#f9c7ca;color:#b90300;margin-left:20px}
+body .download span {color:#8d2ac2;display:block;font-size:75%}
+a.download:hover {background-color:#fbe3e4;color:#d12f19;text-decoration:none !important}
+a.download:active {background-color:#f9c7ca}
+a.download img {float:left;margin:8px 8px 8px 0 !important}
+
+p.info {background:url(emblem-important.png) no-repeat 0 5px;margin:2em 0 2em 12em;padding-left:50px}
